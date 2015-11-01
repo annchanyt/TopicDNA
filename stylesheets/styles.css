@@ -416,7 +416,7 @@ section {
 /* line 355, ../sass/styles.scss */
 #registrationValidation {
   margin: 10px auto;
-  width: 721px;
+  max-width: 721px;
 }
 
 @media screen and (min-width: 768px) {
