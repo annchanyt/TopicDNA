@@ -413,16 +413,22 @@ section {
   padding: 5px 10px;
 }
 
+/* line 355, ../sass/styles.scss */
+#registrationValidation {
+  margin: 10px auto;
+  width: 721px;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 356, ../sass/styles.scss */
+  /* line 360, ../sass/styles.scss */
   #call-to-action {
     min-height: 270px;
   }
-  /* line 358, ../sass/styles.scss */
+  /* line 362, ../sass/styles.scss */
   #call-to-action h5 {
     margin-bottom: 48px;
   }
-  /* line 361, ../sass/styles.scss */
+  /* line 365, ../sass/styles.scss */
   #call-to-action .input-email {
     height: 48px;
     width: 580px;
@@ -430,14 +436,14 @@ section {
     display: inline;
     font-size: 24px;
   }
-  /* line 368, ../sass/styles.scss */
+  /* line 372, ../sass/styles.scss */
   #call-to-action .btn {
     border-radius: 0 24px 24px 0;
     display: inline;
     vertical-align: top;
     margin: 0;
   }
-  /* line 374, ../sass/styles.scss */
+  /* line 378, ../sass/styles.scss */
   #call-to-action .btn-xl {
     height: 48px;
     width: 141px;
@@ -445,14 +451,14 @@ section {
   }
 }
 /* footer =============================*/
-/* line 382, ../sass/styles.scss */
+/* line 386, ../sass/styles.scss */
 footer {
   height: 180px;
   background-color: #133a4c;
   padding-top: 44px;
   position: relative;
 }
-/* line 387, ../sass/styles.scss */
+/* line 391, ../sass/styles.scss */
 footer .btn {
   height: 48px;
   width: 48px;
@@ -465,39 +471,39 @@ footer .btn {
   color: #30a3d9;
   box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.35);
 }
-/* line 398, ../sass/styles.scss */
+/* line 402, ../sass/styles.scss */
 footer .btn .fa-twitter {
   font-size: 28px;
 }
-/* line 402, ../sass/styles.scss */
+/* line 406, ../sass/styles.scss */
 footer .footer-nav {
   margin-bottom: 24px;
   color: #30a3d9;
 }
-/* line 405, ../sass/styles.scss */
+/* line 409, ../sass/styles.scss */
 footer .footer-nav a {
   color: #d9d9d9;
   font-size: 14px;
   font-weight: 300;
   margin: 0 8px;
 }
-/* line 410, ../sass/styles.scss */
+/* line 414, ../sass/styles.scss */
 footer .footer-nav a:hover, footer .footer-nav a:focus {
   color: #fff;
 }
-/* line 415, ../sass/styles.scss */
+/* line 419, ../sass/styles.scss */
 footer .footer-msg {
   color: #257da6;
   font-weight: 600;
   font-size: 14px;
 }
-/* line 419, ../sass/styles.scss */
+/* line 423, ../sass/styles.scss */
 footer .footer-msg .glyphicon-heart {
   font-size: 12px;
   color: #d9306b;
   margin: 0 4px;
 }
-/* line 424, ../sass/styles.scss */
+/* line 428, ../sass/styles.scss */
 footer .footer-msg span {
   display: block;
   font-weight: 300;
@@ -505,12 +511,12 @@ footer .footer-msg span {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 434, ../sass/styles.scss */
+  /* line 438, ../sass/styles.scss */
   footer .footer-nav a {
     font-size: 18px;
     margin: 0 8px;
   }
-  /* line 440, ../sass/styles.scss */
+  /* line 444, ../sass/styles.scss */
   footer .footer-msg span {
     display: inline;
     font-weight: 300;
