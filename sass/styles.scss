@@ -173,6 +173,9 @@ a:hover, a:focus{
     a {
     color: $white;
     font-weight: 600;
+    &:hover{
+      color: $dark-blue;
+    }
     }
   }
 }
