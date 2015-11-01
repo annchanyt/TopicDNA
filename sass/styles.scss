@@ -1,0 +1,480 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+// Import Bootstrap for Sass
+// @import "bootstrap";
+
+/* Colours =============================*/
+/* ================================================*/
+$main-blue: #30a3d9;
+$dark-blue: #133a4c;
+$deep-blue: #154156;
+$light-dark-blue: #257da6;
+$pink: #e53271;
+$white: #fff;
+$main-grey: #566566;
+$shape-grey: #b3b3b3;
+$dark-text-grey: #464c4c;
+$light-grey: #cccccc;
+$bg-grey: #f2f2f2;
+
+
+/* Typography =============================*/
+/* ================================================*/
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../fonts/montserrat/Montserrat-Light.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6,{
+  margin-top: 0;
+}
+h1{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 28px; 
+  line-height: 36px;
+  font-weight: 700;
+  @media screen and (min-width: $screen-sm) {
+    font-size: 36px; 
+    line-height: 48px;
+  }
+}
+h2{
+  font-family: 'Montserrat-Light', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;  
+  line-height: 21px;
+  color: $white;
+  @media screen and (min-width: $screen-sm) {
+    font-size: 21px;  
+    line-height: 30px;
+  }
+}
+h3{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $main-blue;
+  margin: 0;
+  margin-bottom: 14px;
+  @media screen and (min-width: $screen-sm) {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+}
+h4{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $dark-blue;
+  margin-bottom: 24px;
+  @media screen and (min-width: $screen-sm) {
+    font-size: 24px;
+    margin-bottom: 54px;
+  }
+}
+h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: $deep-blue;
+  @media screen and (min-width: $screen-sm) {
+    font-size: 24px;
+  }
+}
+p{
+  color: $main-grey;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  @media screen and (min-width: $screen-sm) {
+    font-size: 18px;
+    line-height: 27px;  
+    font-weight: 300;
+  }
+}
+a{
+  cursor: pointer!important;
+}
+a:hover, a:focus{
+  text-decoration: none;
+  color: $dark-blue;
+}
+/* Buttons =============================*/
+/* ================================================*/
+.btn{
+  border-radius: 18px;
+  text-transform: uppercase;
+}
+.btn-lg{
+  height: 30px;
+  width: 120px;
+  padding: 5px 5px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  @media screen and (min-width: $screen-sm){
+    height: 36px;
+    width: 150px;
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+}
+.btn-danger{
+  background-color: $pink;
+  &:hover, &:focus{
+    background-color: darken($pink,10%);
+  }
+} 
+.btn-info{
+  background-color: $main-blue;
+  border: solid 2px $white;
+  &:hover, &:focus{
+    background-color: $white;
+    color: $main-blue;
+    border: solid 2px $white;
+  }
+}
+
+/* Nav Bar =============================*/
+/* ================================================*/
+.navbar.navbar-default{
+  background-color: $main-blue;
+  border-color: $main-blue; 
+  margin-bottom: 0;
+  border-radius:0;
+  .navbar-toggle.collapsed{
+    // background-color: $light-grey;
+  }
+  .navbar-toggle{
+    // border-color: $dark-blue;
+    &:hover{
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+  .navbar-brand{
+    font-size: 20px;
+    font-weight: 600;
+    color: $dark-blue;
+  }
+  .navbar-nav > li {
+    a {
+    color: $white;
+    font-weight: 600;
+    }
+  }
+}
+@media screen and (min-width: $screen-sm) {
+  .navbar-default{
+  background-color: $main-blue;
+  border-color: $main-blue; 
+  .navbar-collapse{
+    border-color: $white; 
+  }
+  .navbar-brand{
+    font-size: 20px;
+    font-weight: 600;
+    color: $dark-blue;
+  }
+  .navbar-nav > li {
+    a {
+    color: $white;
+    font-weight: 600;
+    }
+  }
+}
+}
+
+
+/* Sections =============================*/
+/* ================================================*/
+section{
+  padding: 60px 0;
+}
+/* Banner =============================*/
+#banner{
+  padding: 40px 0 0;
+  background-color: $main-blue;
+  text-align: center;
+  .banner-text{
+    padding-top: 30px;
+  }
+  h1{
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  h2{
+    magin-top:0;
+    margin-bottom: 24px;
+  }
+  img{
+    margin-bottom: -2px;
+  }
+  .btn-danger{
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: $screen-sm){
+  #banner{
+  padding: 100px 0 0;
+  text-align: left;
+
+  .banner-text{
+    padding-top: 30px;
+  }
+  h1{
+    margin-bottom: 30px;
+  }
+  h2{
+    margin-bottom: 36px;
+  }
+  img{
+    margin-bottom: -2px;
+  }
+  .btn-danger{
+    margin-right: 21px;
+  }
+}
+}
+
+/* feature-set =============================*/
+#feature-set{
+  padding:0;
+}
+.features{
+  padding: 30px 0;
+  .circle{
+    display: block;
+    background-color: $shape-grey;
+    height: 28px;
+    width: 28px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: $white;
+    padding: 3px 9px;
+    margin-left: 12px;
+  }
+}
+#middle-feature{
+  border-top: solid 1px $light-grey;
+  border-bottom: solid 1px $light-grey;
+}
+
+@media screen and (min-width: $screen-sm) {
+  #feature-set{
+    padding:0;
+  }
+  .features{
+    padding: 108px 0;
+    .circle{
+      display: block;
+      height:36px;
+      width: 36px;
+      font-size: 24px;
+      padding: 5px 12px;
+    }
+  }
+}
+/* customers =============================*/
+#customers{
+  background-color: $bg-grey;
+  .customer-div{
+    text-align: center;
+  }
+  img{
+    margin: 12px 0 16px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+    // color: $dark-text-grey;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: $screen-sm) {
+  #customers{
+  .row-first{
+    margin-bottom: 72px;
+  }
+  .customer-div{
+    text-align: left;
+  }
+  img{
+    margin-top: 12px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+    // color: $dark-text-grey;
+    font-weight: 400;
+  }
+}
+}  
+
+/* call to action =============================*/
+#call-to-action{
+  background-color: $main-blue;
+  h5{
+    margin-bottom: 24px;
+  }
+  .input-email{
+    height: 36px;
+    width: 100%;
+    border-radius: 24px;
+    display: inline;
+    font-size: 18px;
+    padding-left: 21px;
+    color: $main-grey;
+  }
+  .btn{
+    border-radius: 24px;
+    display: block;
+    margin: 20px auto;
+  }
+  .btn-xl{
+    height: 33px;
+    width: 40%;
+    padding: 5px 10px;
+  }
+}
+@media screen and (min-width: $screen-sm){
+  #call-to-action{
+  min-height: 270px;
+  h5{
+    margin-bottom: 48px;
+  }
+  .input-email{
+    height: 48px;
+    width: 580px;
+    border-radius: 24px 0 0 24px;
+    display: inline;
+    font-size: 24px;
+  }
+  .btn{
+    border-radius: 0 24px 24px 0;
+    display: inline;
+    vertical-align: top;
+    margin:0;
+  }
+  .btn-xl{
+    height: 48px;
+    width: 141px;
+    padding: 5px 10px;
+  }
+}
+}
+/* footer =============================*/
+footer{
+  height: 180px;
+  background-color: $dark-blue;
+  padding-top:44px;
+  position: relative;
+  .btn{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: -26px;
+    transform: translate(-50%, 0);
+    background-color: $white; 
+    padding: 10px 5px 10px 8px;
+    color: $main-blue;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.35);
+    .fa-twitter{
+      font-size: 28px;
+    }
+  }
+  .footer-nav{
+    margin-bottom: 24px;
+    color: $main-blue;
+    a{
+      color: darken($white,15%);
+      font-size: 14px;
+      font-weight: 300;
+      margin: 0 8px;
+      &:hover, &:focus{
+        color: $white;
+      }
+    }
+  }
+  .footer-msg{
+    color: $light-dark-blue;
+    font-weight: 600;
+    font-size: 14px;
+    .glyphicon-heart{
+      font-size: 12px;
+      color: #d9306b;
+      margin: 0 4px;
+    }
+    span{
+      display: block;
+      font-weight: 300;
+      margin-top: 6px;
+    }
+  }
+}
+@media screen and (min-width: $screen-sm){
+  footer{
+    .footer-nav{
+      a{
+        font-size: 18px;
+        margin: 0 8px;
+      }
+    }
+    .footer-msg{       
+      span{
+        display: inline;
+        font-weight: 300;
+        margin-left: 10px;
+        margin-top: 0;
+      }
+    }
+  }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
