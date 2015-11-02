@@ -188,7 +188,7 @@ a:hover, a:focus {
 }
 /* line 160, ../sass/styles.scss */
 .navbar.navbar-default .navbar-toggle {
-  padding: 6px;
+  padding: 6px 8px;
 }
 /* line 163, ../sass/styles.scss */
 .navbar.navbar-default .navbar-toggle:hover {
@@ -204,7 +204,7 @@ a:hover, a:focus {
 }
 /* line 173, ../sass/styles.scss */
 .navbar.navbar-default .navbar-brand img {
-  height: 18px;
+  height: 20px;
 }
 /* line 178, ../sass/styles.scss */
 .navbar.navbar-default .navbar-nav > li a {
