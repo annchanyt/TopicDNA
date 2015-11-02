@@ -185,7 +185,10 @@ a:hover, a:focus {
   border-color: #30a3d9;
   margin-bottom: 0;
   border-radius: 0;
-  padding: 6px 0;
+}
+/* line 160, ../sass/styles.scss */
+.navbar.navbar-default .navbar-toggle {
+  padding: 6px;
 }
 /* line 163, ../sass/styles.scss */
 .navbar.navbar-default .navbar-toggle:hover {
@@ -197,39 +200,37 @@ a:hover, a:focus {
   font-size: 20px;
   font-weight: 600;
   color: #133a4c;
+  padding: 15px;
 }
-/* line 172, ../sass/styles.scss */
+/* line 173, ../sass/styles.scss */
 .navbar.navbar-default .navbar-brand img {
-  /*height: 24px;*/
+  height: 18px;
 }
-/* line 177, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 .navbar.navbar-default .navbar-nav > li a {
   color: #fff;
   font-weight: 600;
 }
-/* line 180, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 .navbar.navbar-default .navbar-nav > li a:hover {
   color: #133a4c;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 187, ../sass/styles.scss */
-  .navbar-default {
-    background-color: #30a3d9;
-    border-color: #30a3d9;
+  /* line 188, ../sass/styles.scss */
+  .navbar.navbar-default {
+    padding: 6px 0;
   }
   /* line 190, ../sass/styles.scss */
-  .navbar-default .navbar-collapse {
+  .navbar.navbar-default .navbar-collapse {
     border-color: #fff;
   }
-  /* line 193, ../sass/styles.scss */
-  .navbar-default .navbar-brand {
-    font-size: 20px;
-    font-weight: 600;
-    color: #133a4c;
+  /* line 194, ../sass/styles.scss */
+  .navbar.navbar-default .navbar-brand img {
+    height: 25px;
   }
   /* line 199, ../sass/styles.scss */
-  .navbar-default .navbar-nav > li a {
+  .navbar.navbar-default .navbar-nav > li a {
     color: #fff;
     font-weight: 600;
   }
